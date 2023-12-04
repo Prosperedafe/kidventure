@@ -1,14 +1,22 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import { COLORS, FONT } from '../constants/theme'
+import { Stack } from 'expo-router'
 
 export default function Page() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <Stack.Screen 
+      options={{
+        headerTitle: ""
+      }}
+      />
       <Text style={styles.text}>Welcome to Kidventure, Prosper</Text>
-    </View>
+    </SafeAreaView>
   )
 }
+
+
 const styles = StyleSheet.create({
   container: {
     padding: '5%',
