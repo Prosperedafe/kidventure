@@ -1,19 +1,24 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { COLORS, FONT } from '../constants/theme'
 
 export default function Page() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Kidventure</Text>
+      <Text style={styles.text}>Welcome to Kidventure, Prosper</Text>
     </View>
   )
 }
 const styles = StyleSheet.create({
   container: {
-    padding: '5%'
+    padding: '5%',
+    backgroundColor: COLORS.primary,
+    flex: 1
   },
   text: {
-    color: 'blue',
-    // fontSize: '2rem'
+    color: 'white',
+    fontSize: 24,
+    fontFamily: FONT.DosisSemiBold,
+    textAlign: 'center'
   }
 })
