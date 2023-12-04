@@ -12,6 +12,7 @@ export default function Page() {
       }}
       />
       <Text style={styles.text}>Welcome to Kidventure, Prosper</Text>
+      <Text style={styles.lowerText}>It's nice having you here Sir. Care for a drink?</Text>
     </SafeAreaView>
   )
 }
@@ -25,8 +26,16 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
-    fontSize: 24,
+    fontSize: 32,
     fontFamily: FONT.DosisSemiBold,
     textAlign: 'center'
+  },
+  lowerText: {
+    color: 'white',
+    fontSize: 20,
+    fontFamily: FONT.FredokaOneRegular,
+    textAlign: 'center',
+    marginTop: 60,
+    lineHeight: 30,
   }
 })
