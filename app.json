@@ -8,6 +8,9 @@
       "expo-router"
     ],
     "name": "Kidventure",
-    "slug": "Kidventure"
+    "slug": "Kidventure",
+    "android": {
+      "package": "com.jo_na_than.Kidventure"
+    }
   }
 }
